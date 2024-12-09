@@ -255,7 +255,7 @@ def main():
         nondeterminism = ntm.calculate_nondeterminism(config_tree)
         write_output(outfile, f"Degree of nondeterminism: {nondeterminism:.2f}\n")
 
-        # If verbose output requested, print entire config tree at each level
+        # If verbose output requested, print entire config tree at each level and write to output file
         if args.verbose:
             write_output(outfile, "\nConfiguration Tree:")
             for level, configs in enumerate(config_tree):
@@ -264,7 +264,7 @@ def main():
                     write_output(outfile, f"  {str(conf)}")
                 write_output(outfile, "")
 
-        # If the string is accepted, print acceptance path
+        # If the string is accepted, print acceptance path and write all info to output file
         if accepted:
             write_output(outfile, f"String accepted in {depth} steps")
             if path:
@@ -286,6 +286,7 @@ def main():
         else:
             write_output(outfile, f"String rejected in {depth} steps")
 
+    # Close output file if it exists
     finally:
         if outfile:
             outfile.close()
