@@ -1,0 +1,115 @@
+
+Machine: a plus
+Input: aaaaaaaaaaaaaaaaaaaaba
+Tree depth: 21
+Degree of nondeterminism: 0.98
+
+
+Configuration Tree:
+Level 0:
+  , q1, aaaaaaaaaaaaaaaaaaaaba
+
+Level 1:
+  a, q1, aaaaaaaaaaaaaaaaaaaba
+  a, q2, aaaaaaaaaaaaaaaaaaaba
+
+Level 2:
+  aa, q1, aaaaaaaaaaaaaaaaaaba
+  aa, q2, aaaaaaaaaaaaaaaaaaba
+  a, qreject, aaaaaaaaaaaaaaaaaaaba
+
+Level 3:
+  aaa, q1, aaaaaaaaaaaaaaaaaba
+  aaa, q2, aaaaaaaaaaaaaaaaaba
+  aa, qreject, aaaaaaaaaaaaaaaaaaba
+
+Level 4:
+  aaaa, q1, aaaaaaaaaaaaaaaaba
+  aaaa, q2, aaaaaaaaaaaaaaaaba
+  aaa, qreject, aaaaaaaaaaaaaaaaaba
+
+Level 5:
+  aaaaa, q1, aaaaaaaaaaaaaaaba
+  aaaaa, q2, aaaaaaaaaaaaaaaba
+  aaaa, qreject, aaaaaaaaaaaaaaaaba
+
+Level 6:
+  aaaaaa, q1, aaaaaaaaaaaaaaba
+  aaaaaa, q2, aaaaaaaaaaaaaaba
+  aaaaa, qreject, aaaaaaaaaaaaaaaba
+
+Level 7:
+  aaaaaaa, q1, aaaaaaaaaaaaaba
+  aaaaaaa, q2, aaaaaaaaaaaaaba
+  aaaaaa, qreject, aaaaaaaaaaaaaaba
+
+Level 8:
+  aaaaaaaa, q1, aaaaaaaaaaaaba
+  aaaaaaaa, q2, aaaaaaaaaaaaba
+  aaaaaaa, qreject, aaaaaaaaaaaaaba
+
+Level 9:
+  aaaaaaaaa, q1, aaaaaaaaaaaba
+  aaaaaaaaa, q2, aaaaaaaaaaaba
+  aaaaaaaa, qreject, aaaaaaaaaaaaba
+
+Level 10:
+  aaaaaaaaaa, q1, aaaaaaaaaaba
+  aaaaaaaaaa, q2, aaaaaaaaaaba
+  aaaaaaaaa, qreject, aaaaaaaaaaaba
+
+Level 11:
+  aaaaaaaaaaa, q1, aaaaaaaaaba
+  aaaaaaaaaaa, q2, aaaaaaaaaba
+  aaaaaaaaaa, qreject, aaaaaaaaaaba
+
+Level 12:
+  aaaaaaaaaaaa, q1, aaaaaaaaba
+  aaaaaaaaaaaa, q2, aaaaaaaaba
+  aaaaaaaaaaa, qreject, aaaaaaaaaba
+
+Level 13:
+  aaaaaaaaaaaaa, q1, aaaaaaaba
+  aaaaaaaaaaaaa, q2, aaaaaaaba
+  aaaaaaaaaaaa, qreject, aaaaaaaaba
+
+Level 14:
+  aaaaaaaaaaaaaa, q1, aaaaaaba
+  aaaaaaaaaaaaaa, q2, aaaaaaba
+  aaaaaaaaaaaaa, qreject, aaaaaaaba
+
+Level 15:
+  aaaaaaaaaaaaaaa, q1, aaaaaba
+  aaaaaaaaaaaaaaa, q2, aaaaaba
+  aaaaaaaaaaaaaa, qreject, aaaaaaba
+
+Level 16:
+  aaaaaaaaaaaaaaaa, q1, aaaaba
+  aaaaaaaaaaaaaaaa, q2, aaaaba
+  aaaaaaaaaaaaaaa, qreject, aaaaaba
+
+Level 17:
+  aaaaaaaaaaaaaaaaa, q1, aaaba
+  aaaaaaaaaaaaaaaaa, q2, aaaba
+  aaaaaaaaaaaaaaaa, qreject, aaaaba
+
+Level 18:
+  aaaaaaaaaaaaaaaaaa, q1, aaba
+  aaaaaaaaaaaaaaaaaa, q2, aaba
+  aaaaaaaaaaaaaaaaa, qreject, aaaba
+
+Level 19:
+  aaaaaaaaaaaaaaaaaaa, q1, aba
+  aaaaaaaaaaaaaaaaaaa, q2, aba
+  aaaaaaaaaaaaaaaaaa, qreject, aaba
+
+Level 20:
+  aaaaaaaaaaaaaaaaaaaa, q1, ba
+  aaaaaaaaaaaaaaaaaaaa, q2, ba
+  aaaaaaaaaaaaaaaaaaa, qreject, aba
+
+Level 21:
+  aaaaaaaaaaaaaaaaaaaa, qreject, ba
+  aaaaaaaaaaaaaaaaaaaa, qreject, ba
+
+String rejected in 21 steps

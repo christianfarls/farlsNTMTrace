@@ -1,0 +1,25 @@
+
+Machine: a plus
+Input: aababbb
+Tree depth: 3
+Degree of nondeterminism: 0.80
+
+
+Configuration Tree:
+Level 0:
+  , q1, aababbb
+
+Level 1:
+  a, q1, ababbb
+  a, q2, ababbb
+
+Level 2:
+  aa, q1, babbb
+  aa, q2, babbb
+  a, qreject, ababbb
+
+Level 3:
+  aa, qreject, babbb
+  aa, qreject, babbb
+
+String rejected in 3 steps

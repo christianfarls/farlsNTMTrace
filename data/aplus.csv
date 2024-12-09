@@ -1,0 +1,10 @@
+a plus
+q1,q2,q3
+a
+a,_
+q1
+q3
+qreject
+q1,a,q1,a,R
+q1,a,q2,a,R
+q2,_,q3,_,L

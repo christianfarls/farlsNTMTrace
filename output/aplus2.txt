@@ -1,0 +1,55 @@
+
+Machine: a plus
+Input: aaaaa
+Tree depth: 6
+Degree of nondeterminism: 1.00
+
+
+Configuration Tree:
+Level 0:
+  , q1, aaaaa
+
+Level 1:
+  a, q1, aaaa
+  a, q2, aaaa
+
+Level 2:
+  aa, q1, aaa
+  aa, q2, aaa
+  a, qreject, aaaa
+
+Level 3:
+  aaa, q1, aa
+  aaa, q2, aa
+  aa, qreject, aaa
+
+Level 4:
+  aaaa, q1, a
+  aaaa, q2, a
+  aaa, qreject, aa
+
+Level 5:
+  aaaaa, q1, _
+  aaaaa, q2, _
+  aaaa, qreject, a
+
+Level 6:
+  aaaaa, qreject, _
+  aaaa, q3, a_
+
+String accepted in 6 steps
+
+Accepting path with transitions:
+  , q1, aaaaa
+  ↓ (q1,a→a,R)
+  a, q1, aaaa
+  ↓ (q1,a→a,R)
+  aa, q1, aaa
+  ↓ (q1,a→a,R)
+  aaa, q1, aa
+  ↓ (q1,a→a,R)
+  aaaa, q1, a
+  ↓ (q1,a→a,R)
+  aaaaa, q2, _
+  ↓ (q2,_→_,L)
+  aaaa, q3, a_

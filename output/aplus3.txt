@@ -1,0 +1,60 @@
+
+Machine: a plus
+Input: aaaaaaaaaba
+Tree depth: 10
+Degree of nondeterminism: 0.95
+
+
+Configuration Tree:
+Level 0:
+  , q1, aaaaaaaaaba
+
+Level 1:
+  a, q1, aaaaaaaaba
+  a, q2, aaaaaaaaba
+
+Level 2:
+  aa, q1, aaaaaaaba
+  aa, q2, aaaaaaaba
+  a, qreject, aaaaaaaaba
+
+Level 3:
+  aaa, q1, aaaaaaba
+  aaa, q2, aaaaaaba
+  aa, qreject, aaaaaaaba
+
+Level 4:
+  aaaa, q1, aaaaaba
+  aaaa, q2, aaaaaba
+  aaa, qreject, aaaaaaba
+
+Level 5:
+  aaaaa, q1, aaaaba
+  aaaaa, q2, aaaaba
+  aaaa, qreject, aaaaaba
+
+Level 6:
+  aaaaaa, q1, aaaba
+  aaaaaa, q2, aaaba
+  aaaaa, qreject, aaaaba
+
+Level 7:
+  aaaaaaa, q1, aaba
+  aaaaaaa, q2, aaba
+  aaaaaa, qreject, aaaba
+
+Level 8:
+  aaaaaaaa, q1, aba
+  aaaaaaaa, q2, aba
+  aaaaaaa, qreject, aaba
+
+Level 9:
+  aaaaaaaaa, q1, ba
+  aaaaaaaaa, q2, ba
+  aaaaaaaa, qreject, aba
+
+Level 10:
+  aaaaaaaaa, qreject, ba
+  aaaaaaaaa, qreject, ba
+
+String rejected in 10 steps
